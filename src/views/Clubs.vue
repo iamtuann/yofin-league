@@ -14,51 +14,8 @@
 <script setup>
 import { ref } from "vue";
 import ClubItem from "../components/ClubItem.vue"
+import listClub from "../data/clubs.json";
 
-const listClub = ref([
-  {
-    id: "1",
-    name: "Top1Server",
-    coachName: "Carlo AnceloTuan",
-    flag: "real-mandrid-flag.png",
-    coachImage: "coach-tuan.png",
-  },
-  {
-    id: "2",
-    name: "Top1Server",
-    coachName: "Carlo AnceloTuan",
-    flag: "real-mandrid-flag.png",
-    coachImage: "coach-tuan.png",
-  },
-  {
-    id: "3",
-    name: "Top1Server",
-    coachName: "Carlo AnceloTuan",
-    flag: "real-mandrid-flag.png",
-    coachImage: "coach-tuan.png",
-  },
-  {
-    id: "4",
-    name: "Top1Server",
-    coachName: "Carlo AnceloTuan",
-    flag: "real-mandrid-flag.png",
-    coachImage: "coach-tuan.png",
-  },
-  {
-    id: "5",
-    name: "Top1Server",
-    coachName: "Carlo AnceloTuan",
-    flag: "real-mandrid-flag.png",
-    coachImage: "coach-tuan.png",
-  },
-  {
-    id: "6",
-    name: "Top1Server",
-    coachName: "Carlo AnceloTuan",
-    flag: "real-mandrid-flag.png",
-    coachImage: "coach-tuan.png",
-  },
-])
 </script>
 
 <style scoped>

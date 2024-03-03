@@ -27,17 +27,32 @@ function getImageUrl(imageName) {
 
 <style scoped>
 .wrapper {
-  max-height: 200px;
+  height: 180px;
+  display: flex;
+  align-items: flex-end;
+  transform-origin: bottom;
+  transform: rotateX(90deg);
+  animation: flip-up ease-in-out .6s forwards 0.4s;
 }
 .avatar {
   /* width: 50%; */
   /* max-width: 50%; */
   width: 50%;
-  height: 100%;
+  flex-shrink: 0;
+  max-height: 180px;
   object-fit: contain;
   /* object-fit: contain; */
 }
 .flag-img {
   width: 100%;
+}
+
+@keyframes flip-up {
+  0% {
+    /* transform: rotateX(90deg); */
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
 }
 </style>
