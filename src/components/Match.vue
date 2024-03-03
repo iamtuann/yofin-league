@@ -27,7 +27,7 @@ const { teamOne, teamTwo, date, time } = props;
 
 <style scoped>
 .logo {
-  width: 55px;
+  width: 60px;
   height: 70px;
   display: flex;
   align-items: center;
@@ -38,12 +38,12 @@ const { teamOne, teamTwo, date, time } = props;
   overflow: hidden;
 }
 .logo img {
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   object-fit: contain;
 }
 .name {
-  background-color: #000;
+  background-color: #15161A;
   color: #fff;
   font-weight: 500;
   padding: 8px;
