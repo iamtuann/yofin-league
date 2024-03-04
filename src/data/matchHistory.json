@@ -1,0 +1,14 @@
+[
+  {
+    "id" : "1",
+    "home" : {
+      "clubId" : "1",
+      "goals" : null
+    },
+    "away" : {
+      "clubId" : "2",
+      "goals" : null
+    },
+    "time" : ""
+  } 
+]

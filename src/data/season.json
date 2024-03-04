@@ -1,0 +1,74 @@
+[
+  {
+    "id" : "1",
+    "name" : "Mùa 1",
+    "info": [
+      {
+        "clubId" : "1",
+        "played" : 0,
+        "won" : 0,
+        "drawn" : 0,
+        "lost" : 0,
+        "goalsFor" : 0,
+        "goalsAgainst" : 0,
+        "goalsDifference" : 0,
+        "points" : 0
+      },
+      {
+        "clubId" : "2",
+        "played" : 0,
+        "won" : 0,
+        "drawn" : 0,
+        "lost" : 0,
+        "goalsFor" : 0,
+        "goalsAgainst" : 0,
+        "goalsDifference" : 0,
+        "points" : 0
+      },
+      {
+        "clubId" : "3",
+        "played" : 0,
+        "won" : 0,
+        "drawn" : 0,
+        "lost" : 0,
+        "goalsFor" : 0,
+        "goalsAgainst" : 0,
+        "goalsDifference" : 0,
+        "points" : 0
+      },
+      {
+        "clubId" : "4",
+        "played" : 0,
+        "won" : 0,
+        "drawn" : 0,
+        "lost" : 0,
+        "goalsFor" : 0,
+        "goalsAgainst" : 0,
+        "goalsDifference" : 0,
+        "points" : 0
+      },
+      {
+        "clubId" : "5",
+        "played" : 0,
+        "won" : 0,
+        "drawn" : 0,
+        "lost" : 0,
+        "goalsFor" : 0,
+        "goalsAgainst" : 0,
+        "goalsDifference" : 0,
+        "points" : 0
+      },
+      {
+        "clubId" : "6",
+        "played" : 0,
+        "won" : 0,
+        "drawn" : 0,
+        "lost" : 0,
+        "goalsFor" : 0,
+        "goalsAgainst" : 0,
+        "goalsDifference" : 0,
+        "points" : 0
+      }
+    ]
+  }
+]

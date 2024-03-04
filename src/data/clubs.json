@@ -1,148 +1,44 @@
-{
-  "teams" : [
-    {
-      "id": "1",
-      "name": "Erik ten QUYET",
-      "coachName": "Erik ten QUYET",
-      "flag": "mu-flag.png",
-      "coachImage": "coach-quyet.png"
-    },
-    {
-      "id": "2",
-      "name": "Carlo AncelotTUAN",
-      "coachName": "Carlo AncelotTUAN",
-      "flag": "real-mandrid-flag.png",
-      "coachImage": "coach-tuan.png"
-    },
-    {
-      "id": "3",
-      "name": "XaVU Hernandez",
-      "coachName": "XaVU Hernandez",
-      "flag": "barca-flag.png",
-      "coachImage": "coach-vu.png"
-    },
-    {
-      "id": "4",
-      "name": "Simone LAMzaghi",
-      "coachName": "Simone LAMzaghi",
-      "flag": "inter-flag.png",
-      "coachImage": "coach-lam.png"
-    },
-    {
-      "id": "5",
-      "name": "Mikel ANHteta",
-      "coachName": "Mikel ANHteta",
-      "flag": "arsenal-flag.png",
-      "coachImage": "coach-anh.png"
-    },
-    {
-      "id": "6",
-      "name": "Jürgen KLUU",
-      "coachName": "Jürgen KLUU",
-      "flag": "liver-flag.png",
-      "coachImage": "coach-luu.png"
-    }
-  ],
-  "matchSchedule" : [
-    {
-      "id" : "1",
-      "home" : {
-        "clubId" : "1",
-        "goals" : null
-      },
-      "away" : {
-        "clubId" : "2",
-        "goals" : null
-      },
-      "time" : ""
-    } 
-  ],
-  "matchHistory" : [
-    {
-      "id" : "1",
-      "home" : {
-        "clubId" : "1",
-        "goals" : null
-      },
-      "away" : {
-        "clubId" : "2",
-        "goals" : null
-      },
-      "time" : ""
-    } 
-  ],
-  "season" : [
-    {
-      "id" : "1",
-      "name" : "Mùa 1",
-      "info": [
-        {
-          "clubId" : "1",
-          "played" : 0,
-          "won" : 0,
-          "drawn" : 0,
-          "lost" : 0,
-          "goalsFor" : 0,
-          "goalsAgainst" : 0,
-          "goalsDifference" : 0,
-          "points" : 0
-        },
-        {
-          "clubId" : "2",
-          "played" : 0,
-          "won" : 0,
-          "drawn" : 0,
-          "lost" : 0,
-          "goalsFor" : 0,
-          "goalsAgainst" : 0,
-          "goalsDifference" : 0,
-          "points" : 0
-        },
-        {
-          "clubId" : "3",
-          "played" : 0,
-          "won" : 0,
-          "drawn" : 0,
-          "lost" : 0,
-          "goalsFor" : 0,
-          "goalsAgainst" : 0,
-          "goalsDifference" : 0,
-          "points" : 0
-        },
-        {
-          "clubId" : "4",
-          "played" : 0,
-          "won" : 0,
-          "drawn" : 0,
-          "lost" : 0,
-          "goalsFor" : 0,
-          "goalsAgainst" : 0,
-          "goalsDifference" : 0,
-          "points" : 0
-        },
-        {
-          "clubId" : "5",
-          "played" : 0,
-          "won" : 0,
-          "drawn" : 0,
-          "lost" : 0,
-          "goalsFor" : 0,
-          "goalsAgainst" : 0,
-          "goalsDifference" : 0,
-          "points" : 0
-        },
-        {
-          "clubId" : "6",
-          "played" : 0,
-          "won" : 0,
-          "drawn" : 0,
-          "lost" : 0,
-          "goalsFor" : 0,
-          "goalsAgainst" : 0,
-          "goalsDifference" : 0,
-          "points" : 0
-        }
-      ]
-    }
-  ]
-}
+[
+  {
+    "id": "1",
+    "name": "Erik ten QUYET",
+    "coachName": "Erik ten QUYET",
+    "flag": "mu-flag.png",
+    "coachImage": "coach-quyet.png"
+  },
+  {
+    "id": "2",
+    "name": "Carlo AncelotTUAN",
+    "coachName": "Carlo AncelotTUAN",
+    "flag": "real-mandrid-flag.png",
+    "coachImage": "coach-tuan.png"
+  },
+  {
+    "id": "3",
+    "name": "XaVU Hernandez",
+    "coachName": "XaVU Hernandez",
+    "flag": "barca-flag.png",
+    "coachImage": "coach-vu.png"
+  },
+  {
+    "id": "4",
+    "name": "Simone LAMzaghi",
+    "coachName": "Simone LAMzaghi",
+    "flag": "inter-flag.png",
+    "coachImage": "coach-lam.png"
+  },
+  {
+    "id": "5",
+    "name": "Mikel ANHteta",
+    "coachName": "Mikel ANHteta",
+    "flag": "arsenal-flag.png",
+    "coachImage": "coach-anh.png"
+  },
+  {
+    "id": "6",
+    "name": "Jürgen KLUU",
+    "coachName": "Jürgen KLUU",
+    "flag": "liver-flag.png",
+    "coachImage": "coach-luu.png"
+  }
+]

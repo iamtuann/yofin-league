@@ -1,12 +1,13 @@
 <template>
     <div class="container">
         <!-- <RankTable :teams = teams /> -->
+        <button @click="writeJsonFile">write</button>
     </div>
 </template>
 
 <script setup>
-import RankTable from '../components/RankTable.vue';
-import axios from 'axios';
+import { ref } from "vue";
+
 </script>
 
 <style>
