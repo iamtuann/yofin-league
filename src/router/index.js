@@ -11,7 +11,13 @@ const routes = [
     path: "/clubs",
     name: "ListClub",
     component: () => import("../views/Clubs.vue")
-  }
+  },  
+  {
+    path: "",
+    alias: "/rank",
+    name: "Rank",
+    component: () => import("../views/Rank.vue"),
+  },
 ]
 
 const router = createRouter({
