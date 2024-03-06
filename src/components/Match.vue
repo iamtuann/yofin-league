@@ -2,13 +2,13 @@
   <div class="wrapper">
     <div class="d-flex align-items-center">
       <div class="logo">
-        <img :src="teamOne.logo" :alt="teamOne.name">
+        <img :src="getImageUrl(homeClub.flag)" :alt="homeClub.name">
       </div>
-      <div class="name">{{ teamOne.name }}</div>
+      <div class="name">{{ homeClub.name }}</div>
       <div class="vs">VS</div>
-      <div class="name">{{ teamTwo.name }}</div>
+      <div class="name">{{ awayClub.name }}</div>
       <div class="logo">
-        <img :src="teamTwo.logo" :alt="teamTwo.name">
+        <img :src="getImageUrl(awayClub.flag)" :alt="awayClub.name">
       </div>
     </div>
   </div>
@@ -17,12 +17,15 @@
 <script setup>
 const props = defineProps({
   id: { type: [Number, String] },
-  teamOne: { type: Object, required: true },
-  teamTwo: { type: Object, required: true },
-  date: { type: [String, Date], required: true },
-  time: { type: String, required: true }
+  homeClub: { type: Object, required: true },
+  awayClub: { type: Object, required: true },
+  date: { type: [String, Date], required: false },
+  time: { type: String, required: false }
 })
-const { teamOne, teamTwo, date, time } = props;
+const { homeClub, awayClub, date, time } = props;
+function getImageUrl(imageName) {
+  return new URL(`../assets/${imageName}`, import.meta.url)
+}
 </script>
 
 <style scoped>
