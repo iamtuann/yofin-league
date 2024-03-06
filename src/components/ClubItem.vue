@@ -13,7 +13,7 @@
 
 <script setup>
 const props = defineProps({
-  id: { type: String },
+  id: { type: [ String, Number ] },
   name: { type: String, required: true },
   coachName: { type: String, required: true },
   flag: { type: String, required: true },

@@ -16,7 +16,7 @@
 
 <script setup>
 const props = defineProps({
-  id: { type: [Number | String] },
+  id: { type: [Number, String] },
   teamOne: { type: Object, required: true },
   teamTwo: { type: Object, required: true },
   date: { type: [String, Date], required: true },

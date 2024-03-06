@@ -13,8 +13,17 @@
 
 <script setup>
 import { ref } from "vue";
-import ClubItem from "../components/ClubItem.vue"
-import listClub from "../data/clubs.json";
+import ApiService from "../service";
+import ClubItem from "../components/ClubItem.vue";
+
+const listClub = ref([]);
+
+async function getData() {
+  const res = await ApiService.get("/clubs");
+  listClub.value = res.data
+  console.log(listClub.value);
+}
+getData();
 
 </script>
 
