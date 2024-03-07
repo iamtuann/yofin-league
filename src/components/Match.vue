@@ -1,28 +1,26 @@
 <template>
   <div class="wrapper">
-    <div class="d-flex align-items-center">
-      <div class="logo">
-        <img :src="teamOne.logo" :alt="teamOne.name">
+    <div class="d-flex align-items-center" v-for="item in match" :key="item.id">
+      <div>{{ item.home.clubId }}</div>
+      <!-- <div class="logo">
+        <img :src="item.home.clubId" :alt="teamOne.name">
       </div>
       <div class="name">{{ teamOne.name }}</div>
       <div class="vs">VS</div>
       <div class="name">{{ teamTwo.name }}</div>
       <div class="logo">
         <img :src="teamTwo.logo" :alt="teamTwo.name">
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
 
 <script setup>
 const props = defineProps({
-  id: { type: [Number | String] },
-  teamOne: { type: Object, required: true },
-  teamTwo: { type: Object, required: true },
-  date: { type: [String, Date], required: true },
-  time: { type: String, required: true }
+  match : {type : Object, require : true}
 })
-const { teamOne, teamTwo, date, time } = props;
+const { match } = props;
+console.log(match[0].home.clubId);
 </script>
 
 <style scoped>
