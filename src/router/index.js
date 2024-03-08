@@ -1,4 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
+import DefaultLayout from "../layouts/DefaultLayout.vue";
+import AdminLayout from "../layouts/AdminLayout.vue";
 
 const routes = [
   {
@@ -6,17 +8,19 @@ const routes = [
     alias: "/",
     name: "Home",
     component: () => import("../views/Home.vue"),
+    meta: { layout: DefaultLayout }
   },
   {
     path: "/clubs",
     name: "ListClub",
-    component: () => import("../views/Clubs.vue")
+    component: () => import("../views/Clubs.vue"),
+    meta: { layout: DefaultLayout }
   },  
   {
-    path: "",
-    alias: "/rank",
+    path: "/rank",
     name: "Rank",
     component: () => import("../views/Rank.vue"),
+    meta: { layout: DefaultLayout }
   },
 ]
 

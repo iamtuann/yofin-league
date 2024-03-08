@@ -22,7 +22,6 @@ const matchSchedule = ref([]);
 async function getData() {
   const res = await ApiService.get("/match");
   matchSchedule.value = res.data
-  console.log(matchSchedule.value);
 }
 getData();
 </script>
