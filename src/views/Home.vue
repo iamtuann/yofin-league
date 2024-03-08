@@ -6,6 +6,7 @@
       <Match v-for="match in matchSchedule" :key="match.id" 
         :homeClub="match.homeClub" :awayClub="match.awayClub" :date="match.date"
       />
+      
     </div>
   </div>
 </template>
@@ -19,7 +20,7 @@ const todayString = today.getDate() + "/" + (Number(today.getMonth()) + 1) + "/"
 const matchSchedule = ref([]);
 
 async function getData() {
-  const res = await ApiService.get("/match/today");
+  const res = await ApiService.get("/match");
   matchSchedule.value = res.data
 }
 getData();

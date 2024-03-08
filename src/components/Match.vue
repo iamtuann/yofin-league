@@ -26,6 +26,7 @@ const { homeClub, awayClub, date, time } = props;
 function getImageUrl(imageName) {
   return new URL(`../assets/${imageName}`, import.meta.url)
 }
+console.log(homeClub);
 </script>
 
 <style scoped>
