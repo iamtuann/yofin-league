@@ -1,6 +1,6 @@
 <template>
-  <div class="container footer">
-    <video class="" autoplay loop muted height="80%" width="100%">
+  <div class="footer w-100 d-flex justify-content-center">
+    <video class="" autoplay loop muted>
                 <source src="../assets/banner.mp4" type="video/mp4">
     </video>
   </div>
