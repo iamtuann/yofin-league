@@ -1,11 +1,13 @@
 <template>
-  <div class="main">
+  <div class="main d-flex flex-column align-items-center">
     <Header />
     <Router-view></Router-view>
+    <!-- <Footer /> -->
   </div>
 </template>
 <script setup>
 import Header from './components/Header.vue';
+import Footer from './components/Footer.vue';
 </script>
 
 <style scoped>

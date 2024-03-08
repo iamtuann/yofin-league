@@ -20,6 +20,7 @@
   display: flex;
   align-items: center;
   border-bottom: 1px solid #ddd;
+  width: 100%;
 }
 .logo {
   font-size: 24px;
