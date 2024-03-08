@@ -1,26 +1,32 @@
 <template>
   <div class="wrapper">
-    <div class="d-flex align-items-center" v-for="item in match" :key="item.id">
-      <div>{{ item.home.clubId }}</div>
-      <!-- <div class="logo">
-        <img :src="item.home.clubId" :alt="teamOne.name">
-      </div>
-      <div class="name">{{ teamOne.name }}</div>
-      <div class="vs">VS</div>
-      <div class="name">{{ teamTwo.name }}</div>
+    <div class="d-flex align-items-center">
       <div class="logo">
-        <img :src="teamTwo.logo" :alt="teamTwo.name">
-      </div> -->
+        <img :src="getImageUrl(homeClub.flag)" :alt="homeClub.name">
+      </div>
+      <div class="name">{{ homeClub.name }}</div>
+      <div class="vs">VS</div>
+      <div class="name">{{ awayClub.name }}</div>
+      <div class="logo">
+        <img :src="getImageUrl(awayClub.flag)" :alt="awayClub.name">
+      </div>
     </div>
   </div>
 </template>
 
 <script setup>
 const props = defineProps({
-  match : {type : Object, require : true}
+  id: { type: [Number, String] },
+  homeClub: { type: Object, required: true },
+  awayClub: { type: Object, required: true },
+  date: { type: [String, Date], required: false },
+  time: { type: String, required: false }
 })
-const { match } = props;
-console.log(match[0].home.clubId);
+const { homeClub, awayClub, date, time } = props;
+function getImageUrl(imageName) {
+  return new URL(`../assets/${imageName}`, import.meta.url)
+}
+console.log(homeClub);
 </script>
 
 <style scoped>

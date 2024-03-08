@@ -3,7 +3,8 @@
     <h1 class="fs-3 text-center text-white mt-4">Lượt trận hôm nay</h1>
     <div class="mt-2 fs-3 text-center text-white">{{ todayString }}</div>
     <div class="match-schedule mt-5">
-      <Match :match = matchSchedule
+      <Match v-for="match in matchSchedule" :key="match.id" 
+        :homeClub="match.homeClub" :awayClub="match.awayClub" :date="match.date"
       />
       
     </div>
@@ -12,28 +13,18 @@
 
 <script setup>
 import Match from '../components/Match.vue';
-import matchSchedule from '../data/matchSchedule.json'
+import ApiService from "../service";
+import { ref } from "vue";
 const today = new Date();
 const todayString = today.getDate() + "/" + (Number(today.getMonth()) + 1) + "/"+today.getFullYear()
-// const matchSchedule = [
-//   {
-//     id: "1",
-//     teamOne: {
-//       id: "1",
-//       name: "Nguyễn Dũng Tuấn",
-//       coach: "Carlo AnceloTuan",
-//       logo: "https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Real_Madrid_CF.svg/1200px-Real_Madrid_CF.svg.png"
-//     },
-//     teamTwo: {
-//       id: "2",
-//       name: "Trịnh Văn Quyết",
-//       coach: "Erik ten Quyet",
-//       logo: "https://static.bongda24h.vn/medias/standard/2021/11/6/213700-5.jpg"
-//     },
-//     date: today,
-//     time: "12:15"
-//   }
-// ]
+const matchSchedule = ref([]);
+
+async function getData() {
+  const res = await ApiService.get("/match");
+  matchSchedule.value = res.data
+  console.log(matchSchedule.value);
+}
+getData();
 </script>
 
 <style scoped>
